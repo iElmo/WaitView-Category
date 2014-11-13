@@ -14,6 +14,7 @@
 		37A13E1C1A15228F00CF1E37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A13E1B1A15228F00CF1E37 /* Images.xcassets */; };
 		37A13E1F1A15228F00CF1E37 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37A13E1D1A15228F00CF1E37 /* LaunchScreen.xib */; };
 		37A13E2B1A15228F00CF1E37 /* WaitViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A13E2A1A15228F00CF1E37 /* WaitViewTests.m */; };
+		37A13E371A1522B100CF1E37 /* UIViewController+WaitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A13E361A1522B100CF1E37 /* UIViewController+WaitView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		37A13E241A15228F00CF1E37 /* WaitViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaitViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A13E291A15228F00CF1E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37A13E2A1A15228F00CF1E37 /* WaitViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaitViewTests.m; sourceTree = "<group>"; };
+		37A13E351A1522B100CF1E37 /* UIViewController+WaitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WaitView.h"; sourceTree = "<group>"; };
+		37A13E361A1522B100CF1E37 /* UIViewController+WaitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WaitView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		37A13E0D1A15228F00CF1E37 /* WaitView */ = {
 			isa = PBXGroup;
 			children = (
+				37A13E341A1522A400CF1E37 /* Categories */,
 				37A13E121A15228F00CF1E37 /* AppDelegate.h */,
 				37A13E131A15228F00CF1E37 /* AppDelegate.m */,
 				37A13E151A15228F00CF1E37 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				37A13E291A15228F00CF1E37 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37A13E341A1522A400CF1E37 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				37A13E351A1522B100CF1E37 /* UIViewController+WaitView.h */,
+				37A13E361A1522B100CF1E37 /* UIViewController+WaitView.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				37A13E171A15228F00CF1E37 /* ViewController.m in Sources */,
 				37A13E141A15228F00CF1E37 /* AppDelegate.m in Sources */,
+				37A13E371A1522B100CF1E37 /* UIViewController+WaitView.m in Sources */,
 				37A13E111A15228F00CF1E37 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

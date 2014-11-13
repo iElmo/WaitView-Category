@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+WaitView.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self showWaitView];
+    [self performSelector:@selector(hideWaitView) withObject:nil afterDelay:4];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)hideWaitView {
+    [super hideWaitView];
 }
 
 @end
